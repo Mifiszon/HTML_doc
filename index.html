@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sernik</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="menu.css">
+        <link rel="shortcut icon" href="zdjecia/favicon1.ico">
+        <style>
+            @media all and (max-width:1000px) {
+                body{
+                    background-image: none;
+                }
+                nav{
+                    background-image: none;
+                }
+            }
+            p { position: relative; text-align: center; font-size: 25px; 
+                border-style: inset; background-color: whitesmoke; border-radius: 25px;}
+            h3 { position: absolute; top: 480px; left: 100px; font-size: 35px; color:#4fc6e0;}
+            .lista { position: absolute; top: 600px; left: 200px; font-size: 20px; border: dashed black 2px; background-color: white;}
+            svg { position: absolute; top: 600px; right: 100px; }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h1>Sernik</h1>
+            <nav>
+                <ul class="menuitems">
+                    <li><a href="index.html">Strona Główna</a></li>
+                    <li><a href="historia.html">Hisotria</a></li>
+                    <li><a href="rodzaje.html">Rodzaje</a></li>
+                    <li><a href="zakupy.html">Zakupy</a></li>
+                </ul>
+            </nav>
+        </section>
+        <br>
+        <p id="myParagraph">Sernik od lat nosi miano najpopularniejszego ciasta w Polsce. <br> To obowiązkowy wypiek podczas każdego święta, a także urodzin, 
+            imienin czy innych okoliczności.<br> Często piecze się go nawet bez okazji, by zaspokoić apetyt na słodki podwieczorek.<br> Jednak czy wiesz już wszystko o serniku? 
+        </p>
+        <div>
+            <h3>Wartości odżywcze sernika (na 100g)</h3>
+            <ul class="lista">
+                <li>Białko: 5g</li>
+                <li>Tłuszcze: 10g</li>
+                <li>Węglowodany: 20g</li>
+                <li>Kaloryczność: 200 kcal</li>
+            </ul>
+        </div>
+        <svg width="400" height="400">
+            <circle cx="200" cy="200" r="180" fill="#FFEBCD" />
+            <circle cx="200" cy="200" r="160" fill="#2E0B0B" />
+            <circle cx="200" cy="200" r="180" stroke="#2e0b0b" stroke-width="10" fill="none" />
+            <line x1="100" y1="100" x2="300" y2="300" stroke="#000000" stroke-width="5" />
+            <line x1="300" y1="100" x2="100" y2="300" stroke="#000000" stroke-width="5" />
+            <line x1="75" y1="200" x2="330" y2="200" stroke="#000000" stroke-width="5" />
+            <line x1="200" y1="75" x2="200" y2="330" stroke="#000000" stroke-width="5" />
+        </svg>  
+        <script>
+            var paragraph = document.getElementById("myParagraph");
+            paragraph.onclick = function() {
+                paragraph.style.borderStyle = "solid";
+            }
+        </script>     
+    </body>
+</html>

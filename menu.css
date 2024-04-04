@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-family: monospace;
+    background-image: url(zdjecia/tło.jpg);
+    background-size: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive;
+}
+
+nav {
+    margin: 25px;
+    background-image: url(zdjecia/menutło.jpg);
+    background-size: 100%;
+    padding: 5px;
+    border: inset black 2px;
+}
+
+.menuitems {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+
+a:hover {
+    width: 100%;
+    color: palevioletred; 
+}

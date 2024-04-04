@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zakupy</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="menu.css">
+        <link rel="shortcut icon" href="zdjecia/favicon4.ico">
+        <style>
+            @media all and (max-width:1000px) {
+                body{
+                    background-image: none;
+                }
+                nav{
+                    background-image: none;
+                }
+            }
+
+            h2 {text-align: center;}
+
+            input[type=text], input[type=tel], input[type=email], input[type=number], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            input[type=submit] {
+                width: 100%;
+                background-color: #4fc6e0;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+                background-color: #49a6ba;
+            }
+
+            div {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h1>Zakupy</h1>
+            <nav>
+                <ul class="menuitems">
+                    <li><a href="index.html">Strona Główna</a></li>
+                    <li><a href="historia.html">Hisotria</a></li>
+                    <li><a href="rodzaje.html">Rodzaje</a></li>
+                    <li><a href="zakupy.html">Zakupy</a></li>
+                </ul>
+            </nav>
+        </section>
+        <br>
+        <div>
+            <form method="get" onsubmit="return validateForm();">
+                <h2>Zamówienie</h2>
+                <label for="name">Imię i Nazwisko:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Adres e-mail:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="phone">Numer telefonu:</label>
+                <input type="tel" id="phone" name="phone"><br><br>
+                <label for="address">Adres dostawy:</label>
+                <input type="text" id="address" name="address"><br><br>
+                <label for="type">Rodzaj sernika:</label>
+                <select id="type" name="type">
+                <option value=""></option>
+                <option value="king">Sernik królewski</option>
+                <option value="japanese">Sernik japoński</option>
+                <option value="cold">Sernik na zimno</option>
+                <option value="peanut">Sernik z orzechami</option>
+                </select><br><br>
+                <label for="quantity">Ilość:</label>
+                <input type="number" id="quantity" name="quantity" min="1"><br><br>
+                <input type="submit" value="Złóż zamówienie" id="submit-button">
+            </form>
+        </div>
+        <script>
+            function validateForm() {
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                if(name ==''||email ==''){
+                    alert('Pole "Imię i Nazwisko" oraz "Adres e-mail" musi być wypełnione!');
+                    return false
+                }
+                return true
+            }
+        </script>
+    </body>
+</html>

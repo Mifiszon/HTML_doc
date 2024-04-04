@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('body').css('background-image', 'none');
+        $('body').css('background-color', '#FFFFF5');
+      });
+    </script>
+    <title>Rodzaje Sernika</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="menu.css">
+    <link rel="shortcut icon" href="zdjecia/favicon3.ico">
+    <style>
+      @media all and (max-width:1000px) {
+                body { 
+                  background-image: none;
+                }
+                nav{
+                    background-image: none;
+                }
+            }
+      td {text-align: center; border: double black 5px; font-size: 20px;}
+      tr {background-color: lightgrey;}
+      th {border: solid black 5px; margin: 25px; padding: 25px; font-size: 30px; background-color: darkgrey;}
+      td:hover { background-color: white;}
+    </style>
+  </head>
+  <body>
+    <section>
+       <h1>Rodzaje Sernika</h1>
+          <nav>
+            <ul class="menuitems">
+              <li><a href="index.html">Strona Główna</a></li>
+              <li><a href="historia.html">Hisotria</a></li>
+              <li><a href="rodzaje.html">Rodzaje</a></li>
+              <li><a href="zakupy.html">Zakupy</a></li>
+            </ul>
+          </nav>
+    </section>
+    <table>
+      <tr>
+        <th>Rodzaj</th>
+        <th>Opis</th>
+        <th>Zdjięcie </th>
+      </tr>
+      <tr>
+        <td rowspan="2"><a href="https://aniagotuje.pl/przepis/sernik-krolewski">Sernik królewski</a></td>
+        <td>Charakteryzuje się czekoladowym spodem, pieczoną masą serową i czekoladową kruszonką na wierzchu ciasta</td>
+        <td><img src="zdjecia/sernik1.jpg" alt="Sernik królewski" width="271"></td>
+      </tr>
+      <tr>
+        <td colspan="2">Wyśmienity na deser po obiedzie</td>
+      </tr>
+      <tr>
+        <td rowspan="2"><a href="https://aniagotuje.pl/przepis/sernik-japonski">Sernik japoński</a></td>
+        <td>Charakteryzujący się lekkością i puszystością oraz wysoko wyrośniętym ciastem bez spodu</td>
+        <td><img src="zdjecia/sernik2.jpg" alt="Sernik japoński"></td>
+      </tr>
+      <tr>
+        <td colspan="2">Idealny na ciepłe letnie dni</td>
+      </tr>
+      <tr>
+        <td rowspan="2"><a href="https://aniagotuje.pl/przepis/sernik-na-zimno-z-twarogu">Sernik na zimno</a></td>
+        <td>Składa się ze spodu (z herbatników lub biszkoptu), masy serowej zestalonej żelatyną, żółtkami lub agar-agar oraz warstwy galaretki na wierzchu ciasta</td>
+        <td><img src="zdjecia/sernik3.jpg" alt="Sernik na zimno"></td>
+      </tr>
+      <tr>
+        <td colspan="2">Idealny na letni deser</td>
+      </tr>
+      <tr>
+        <td rowspan="2"><a href="https://mojewypieki.com/przepis/sernik-orzechowy">Sernik z orzechami</a></td>
+        <td>Wyjątkowy puszysty sernik z dodatkiem orzechów</td>
+        <td><img src="zdjecia/sernik4.jpg" alt="Sernik z orzechami"></td>
+      </tr>
+      <tr>
+        <td colspan="2">Świetny na przyjęcia rodzinne</td>
+      </tr>
+    </table>
+  </body>
+</html>

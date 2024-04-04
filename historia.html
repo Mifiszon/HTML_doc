@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Historia Sernika</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="menu.css">
+    <link rel="shortcut icon" href="zdjecia/favicon2.ico">
+    <style>
+      @media all and (max-width:1000px) {
+                body{
+                  background-image: none;
+                }
+                nav{
+                    background-image: none;
+                }
+            }
+      .grecja { position: absolute; right: 600px; text-align: center; font-size: 20px;
+         border-style: inset; background-color: white; border-radius: 25px;}
+      .stany { position: absolute; left: 600px; top: 700px; text-align: center; font-size: 20px; 
+        border-style: inset; background-color: white; border-radius: 25px;}
+      .zdj1 { position: absolute; right: 100px; border: double 8px grey;}
+      .zdj2 { position: absolute; left: 25px; top: 550px; border: double 8px grey}
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Historia Sernika</h1>
+      <nav>
+        <ul class="menuitems">
+          <li><a href="index.html">Strona Główna</a></li>
+          <li><a href="historia.html">Hisotria</a></li>
+          <li><a href="rodzaje.html">Rodzaje</a></li>
+          <li><a href="zakupy.html">Zakupy</a></li>
+        </ul>
+      </nav>
+      <br>
+      <br>
+      <p class="grecja" id="myParagraph1">Historia sernika sięga starożytnej Grecji, <br> gdzie ser był popularnym składnikiem wielu potraw, w tym ciast.<br> 
+        Najstarsze znane przepisy na sernik pochodzą z V wieku p.n.e. <br> i zawierają mieszankę sera, miodu i jajek.<br> 
+      </p>
+      <img src="zdjecia/zdjecie1.jpeg" onmouseover="this.src='zdjecia/zdjecie3.jpg'" onmouseout="this.src='zdjecia/zdjecie1.jpeg'" class="zdj1" height="300" width="450" >
+      <p class="stany" id="myParagraph2">Sernik był popularny w różnych krajach Europy,<br> ale największą sławę zyskał w Stanach Zjednoczonych,<br> 
+        gdzie stał się jednym z najbardziej rozpoznawalnych<br> i lubianych ciast na świecie.<br> 
+        Obecnie istnieje wiele różnych wariacji na temat sernika,<br> z różnymi dodatkami i smakami.
+      </p>
+      <img src="zdjecia/zdjecie2.jpg" onmouseover="this.src='zdjecia/zdjecie4.jpg'" onmouseout="this.src='zdjecia/zdjecie2.jpg'" class="zdj2" height="300" width="400">
+      <script>
+        var paragraph1 = document.getElementById("myParagraph1");
+        var paragraph2 = document.getElementById("myParagraph2")
+        paragraph1.onclick = function() {
+            paragraph1.style.borderStyle = "outset";
+        }
+        paragraph2.ondblclick = function () {
+          paragraph2.style.borderStyle = "outset";
+        }
+      </script>
+  </body>
+</html>
